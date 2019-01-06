@@ -1,5 +1,4 @@
-class Solution() {
-  private val graphDatabase: GraphDatabase = GraphDatabase.createDatabase()
+class Solution(val graphDatabase: GraphDatabase) {
 
   def databaseStatistics(): Unit = {
     println(graphDatabase.runCypher("CALL db.labels()"))
